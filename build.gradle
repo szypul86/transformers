@@ -19,12 +19,16 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter:2.6.7'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:2.6.7'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.6.7'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation "io.woo:htmltopdf:1.0.8"
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.7'
 }
 
 tasks.named('test') {
